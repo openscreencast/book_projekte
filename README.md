@@ -2,7 +2,7 @@
 
 Übersicht aller gitbooks von openscreencast.de    
 
-Lizenz: MIT
+Lizenz: [MIT license](https://github.com/openscreencast/book_projekte/blob/master/LICENSE)
 
 # benutzte Software
 
