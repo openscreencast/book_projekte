@@ -18,6 +18,7 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
 
   <script src="js/angular.js"></script>
+  <script src="js/angular-animate.js"></script>
   <script src="js/data.js"></script>	
   <script src="js/app.js"></script>
 
@@ -43,7 +44,7 @@
     <!-- Inhalt auflisten -->
     <div class="row">
     <div ng-repeat="book_i in bookview_data">
-        <a ng-if="book.indexOf(book_i.book) != -1 && book_category.indexOf(book_i.book_category) != -1" href="{{book_i.gitbook_url}}">
+        <a ng-if="book.indexOf(book_i.book) != -1 && book_category.indexOf(book_i.book_category) != -1" href="{{book_i.gitbook_url}}" class="bookfade">
             <div class="one-third column">
             <div class="book">
                 <img class="u-max-full-width" src="{{book_i.image}}" class="imgmargin" />
