@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de" ng-app="bookview_App">
+<head>
+
+  <meta charset="utf-8">
+  <title>openscreencast - books</title>
+  <meta name="description" content="openscreencast - books">
+  <meta name="author" content="openscreencast">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <script src="js/angular.js"></script>
+  <script src="js/data.js"></script>	
+  <script src="js/app.js"></script>
+
+</head>
+<body>
+
+  <div class="container" ng-controller="bookviewController">
+
+    <!-- alle Bücher auflisten -->
+    <div class="row">
+      <div class="two-thirds column" style="margin-top: 3%">
+        <span ng-repeat="book_i in book_options"><button ng-click="change_book(book_i)">{{book_i}}</button></span>
+      </div>
+    </div>
+    
+    <!-- alle Buchkategorien auflisten -->
+    <div class="row">
+      <div class="two-thirds column">
+        <span ng-repeat="book_category_i in book_category_options"><button ng-click="change_book_category(book_category_i)">{{book_category_i}}</button> &nbsp; </span>
+      </div>
+    </div>
+
+    <!-- Inhalt auflisten -->
+    <div class="row">
+    <div ng-repeat="book_i in bookview_data">
+        <a ng-if="book.indexOf(book_i.book) != -1 && book_category.indexOf(book_i.book_category) != -1" href="{{book_i.gitbook_url}}">
+            <div class="one-third column">
+            <div class="book">
+                <img class="u-max-full-width" src="{{book_i.image}}" class="imgmargin" />
+                <p class="bookname"><strong>{{book_i.name}}</strong></p>
+                <p class="bookdescription">{{book_i.description}}</p>
+            </div>
+            </div>
+        </a>
+    </div>
+    </div>
+
+  </div> <!-- // Ende container -->
+
+</body>
+</html>
