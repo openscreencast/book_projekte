@@ -26,17 +26,17 @@
 <body>
 
   <div class="container" ng-controller="bookviewController">
-
+    
     <!-- alle Bücher auflisten -->
     <div class="row">
-      <div class="two-thirds column" style="margin-top: 3%">
+      <div class="twelve columns" style="margin-top: 3%;">
         <span ng-repeat="book_i in book_options"><button ng-click="change_book(book_i)">{{book_i}}</button></span>
       </div>
     </div>
     
     <!-- alle Buchkategorien auflisten -->
     <div class="row">
-      <div class="two-thirds column">
+      <div class="twelve columns">
         <span ng-repeat="book_category_i in book_category_options"><button ng-click="change_book_category(book_category_i)">{{book_category_i}}</button> &nbsp; </span>
       </div>
     </div>
@@ -55,7 +55,6 @@
         </a>
     </div>
     </div>
-
   </div> <!-- // Ende container -->
 
 </body>
