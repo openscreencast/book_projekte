@@ -2,8 +2,10 @@ body {
     background-color: #f3f3f3;
 }
 
+a:link { text-decoration: none}
+
 .book {
-    height: 330px;
+    height: 380px;
     background-color: #fff;
     border: solid 1px #ddd;
     border-radius: 5px;
@@ -14,7 +16,6 @@ body {
     /* padding-bottom: 50px; */
     margin-bottom: 15px;
     color: #555;
-    margin-right: 15px;
 }
 
 .book:hover {
@@ -27,11 +28,11 @@ body {
 }
 
 .bookname {
-    font-size: 2.2rem;
+    font-size: 1.4rem;
 }
 
 .bookdescription {
-    font-size: 1.4rem;
+    font-size: 0.9rem;
 }
 
 .bookfade.ng-enter {
