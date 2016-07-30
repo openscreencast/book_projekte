@@ -1,4 +1,4 @@
-var app = angular.module("bookview_App", ['ngAnimate']);
+var app = angular.module("bookview_App", []);
 // Variable app definieren
 
 app.controller('bookviewController', ['$scope', function($scope) {
