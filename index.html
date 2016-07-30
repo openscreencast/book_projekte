@@ -41,8 +41,8 @@
 
     <!-- Inhalt auflisten -->
     <div class="row blocks">
-    <div class="col col-3" ng-repeat="book_i in bookview_data">
-        <a ng-if="book.indexOf(book_i.book) != -1 && book_category.indexOf(book_i.book_category) != -1" href="{{book_i.gitbook_url}}" class="bookfade">
+    <div class="col col-3" ng-repeat="book_i in bookview_data_for_repeat">
+        <a href="{{book_i.gitbook_url}}">
             <div class="book">
                 <img src="{{book_i.image}}" class="imgmargin" />
                 <p class="bookname"><strong>{{book_i.name}}</strong></p>

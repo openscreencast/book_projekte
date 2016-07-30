@@ -35,27 +35,6 @@ a:link { text-decoration: none}
     font-size: 0.9rem;
 }
 
-.bookfade.ng-enter {
-  animation: book_animate 1s linear;
-  -webkit-animation: book_animate 1s linear;
-}
-
-@keyframes book_animate {
-  from { opacity:0; }
-  to { opacity:1; }
-}
-
-@-webkit-keyframes book_animate {
-  from { opacity:0; }
-  to { opacity:1; }
-}
-
-/*
-.fade.ng-leave {
-  transition:1s linear all;
-  opacity:0;
-}
-*/
 
 /*
 .imgkreis {

@@ -33,6 +33,9 @@ app.controller('bookviewController', ['$scope', function($scope) {
     $scope.book_category = $scope.book_category_options;
     // Buch-Kategorie-Liste - alle Werte aus der Liste book_category_options übernehmen
 
+    // Datenliste für die Schleife (alle Bücher anzeigen)
+    $scope.bookview_data_for_repeat = $scope.bookview_data;
+
     $scope.change_book = function(book) {
     // Funktion def. - Buch ändern
         $scope.book = [];
@@ -43,6 +46,18 @@ app.controller('bookviewController', ['$scope', function($scope) {
     // Funktion def. - Buch-Kategorie ändern
         $scope.book_category = [];
         $scope.book_category.push(book_category);
+
+        // Liste leeren
+        $scope.bookview_data_for_repeat = [];
+
+        // ng-if="book.indexOf(book_i.book) != -1 && book_category.indexOf(book_i.book_category) != -1"
+        // nur Bücher in die Liste packen die book und book_category entsprechen
+        $scope.bookview_data.forEach(function(x) { 
+            if($scope.book.indexOf(x.book) != -1 && $scope.book_category.indexOf(x.book_category) != -1) {
+                $scope.bookview_data_for_repeat.push(x);
+            };
+        });
+        
     };  // Ende der Funktion change_book_category
 
  
