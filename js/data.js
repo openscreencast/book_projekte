@@ -16,14 +16,14 @@ var data = [
             book: "Screencast",
             book_category: "Programmierung"
             },
-            {
+            /*{
             name: "R - Programmierung",
             gitbook_url: "https://openscreencast.gitbooks.io/r_programming/content/",
             image: "images/r.png",
             description: "Lerne die Grundlagen der Programmiersprache R.",
             book: "Screencast",
             book_category: "Programmierung"
-            },
+            },*/
             {
             name: "HTML und CSS",
             gitbook_url: "https://openscreencast.gitbooks.io/html_und_css/content/",
