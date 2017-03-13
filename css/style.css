@@ -1,5 +1,5 @@
 body {
-    background-color: #f3f3f3;
+    background-color: #EEEEE0; /* #f3f3f3; */
 }
 
 a:link { text-decoration: none}
@@ -19,7 +19,7 @@ a:link { text-decoration: none}
 }
 
 .book:hover {
-    background-color: #ADD8E6;
+    background-color: #C8C3B2; /* #C6E2FF; #ADD8E6; */
 }
 
 
