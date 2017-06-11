@@ -37,20 +37,22 @@
     
     <div class="row" style="margin-bottom: 2%; margin-top: 2%">
       <div class="col" style="text-align: center">
-        <!--<span ng-repeat="book_category_i in book_category_options"><button ng-click="change_book_category(book_category_i)">{{book_category_i}}</button> &nbsp; </span>--><h2>Videotutorials</h2>
+        <!--<span ng-repeat="book_category_i in book_category_options"><button ng-click="change_book_category(book_category_i)">{{book_category_i}}</button> &nbsp; </span>--><h2>Tutorials.openscreencast</h2>
+		<p>Videotutorials zum Lernen<p>
       </div>
     </div>
 
     <!-- Inhalt auflisten -->
     <div class="row blocks">
     <div class="col col-3" ng-repeat="book_i in bookview_data_for_repeat">
-        <a href="{{book_i.gitbook_url}}">
+        
             <div class="book">
                 <img src="{{book_i.image}}" class="imgmargin" />
                 <p class="bookname"><strong>{{book_i.name}}</strong></p>
                 <p class="bookdescription">{{book_i.description}}</p>
+		<p><a href="{{book_i.gitbook_url}}"><button class="button secondary outline">Start</button></a></p>
             </div>
-        </a>
+        
     </div>
     </div>
 
