@@ -11,6 +11,7 @@
 
   <link rel="stylesheet" href="css/kube.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 
   <script src="js/angular.js"></script>
   <script src="js/data.js"></script>	
@@ -24,7 +25,7 @@
   <div class="row centered">
 	<div class="col col-1" style="background-color: #0079bf;"></div>
   	<div class="col col-10" style="background-color: #0079bf; padding-top: 30px; padding-bottom: 20px;text-align:center; color: #fff">
-	<!--<span ng-repeat="book_category_i in book_category_options"><button ng-click="change_book_category(book_category_i)">{{book_category_i}}</button> &nbsp; </span>--><h2>Tutorials.openscreencast</h2>
+	<!--<span ng-repeat="book_category_i in book_category_options"><button ng-click="change_book_category(book_category_i)">{{book_category_i}}</button> &nbsp; </span>--><h2><i class="fa fa-coffee" aria-hidden="true"></i> Tutorials.openscreencast</h2>
 		<p>Videotutorials zum Lernen<p>
 	</div>
 	<div class="col col-1" style="background-color: #0079bf;"></div>
@@ -49,14 +50,21 @@
     			<div class="col col-3" ng-repeat="book_i in bookview_data_for_repeat">
         
             			<div class="book">
-                		<img src="{{book_i.image}}" class="imgmargin" />
+                		<p><i class="fa fa-{{book_i.image}} fa-5x" aria-hidden="true"></i></p>
                 		<p class="bookname"><strong>{{book_i.name}}</strong></p>
                 		<p class="bookdescription">{{book_i.description}}</p>
-				<p><a href="{{book_i.gitbook_url}}"><button class="button secondary outline">Start</button></a></p>
+				<p><a href="{{book_i.gitbook_url}}"><button class="button secondary outline" style="color: #0079bf;">Start</button></a></p>
             			</div>
 			</div>
 		</div>
 	</div>
+        <div class="col col-1"></div>
+  </div>
+
+  <div class="row centered" style="margin-top: 3%">
+	<div class="col col-1"></div>
+	<div class="col col-10" style="border-top: solid 1px #ccc; font-size: 0.7em; text-align: center;">
+	Icons: <a href="http://fontawesome.io">Font Awesome</a> created by <a href="https://twitter.com/davegandy">Dave Gandy</a>, licensed under <a href="http://scripts.sil.org/OFL">SIL OFL 1.1</a>, Code licensed under <a href="http://opensource.org/licenses/mit-license.html">MIT License</a></div>
         <div class="col col-1"></div>
   </div>
 
