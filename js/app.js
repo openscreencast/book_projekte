@@ -22,15 +22,15 @@ app.controller('bookviewController', ['$scope', function($scope) {
             $scope.book_options.push(x.book);
         };
         // Wenn Buch noch nicht in der book_options-Liste, dann hinzufügen
-        if($scope.book_category_options.indexOf(x.book_category) == -1) {
-            $scope.book_category_options.push(x.book_category);
+        if($scope.book_category_options.indexOf(x.category) == -1) {
+            $scope.book_category_options.push(x.category);
         }; 
         // Wenn Buchkategorie noch nicht in der book_category_options-Liste, dann hinzufügen
     });
 
     $scope.book = ["Screencast"];    // Werte: Screencast, Aufgaben, Quiz
     // Buch-Liste - Standard: Screencast
-    $scope.book_category = $scope.book_category_options;
+    $scope.category = $scope.book_category_options;
     // Buch-Kategorie-Liste - alle Werte aus der Liste book_category_options übernehmen
 
     // Datenliste für die Schleife (alle Bücher anzeigen)
@@ -42,10 +42,10 @@ app.controller('bookviewController', ['$scope', function($scope) {
         $scope.book.push(book);
     };  // Ende der Funktion change_book
 
-    $scope.change_book_category = function(book_category) {
+    $scope.change_book_category = function(category) {
     // Funktion def. - Buch-Kategorie ändern
-        $scope.book_category = [];
-        $scope.book_category.push(book_category);
+        $scope.category = [];
+        $scope.category.push(category);
 
         // Liste leeren
         $scope.bookview_data_for_repeat = [];
@@ -53,7 +53,7 @@ app.controller('bookviewController', ['$scope', function($scope) {
         // ng-if="book.indexOf(book_i.book) != -1 && book_category.indexOf(book_i.book_category) != -1"
         // nur Bücher in die Liste packen die book und book_category entsprechen
         $scope.bookview_data.forEach(function(x) { 
-            if($scope.book.indexOf(x.book) != -1 && $scope.book_category.indexOf(x.book_category) != -1) {
+            if($scope.book.indexOf(x.book) != -1 && $scope.category.indexOf(x.category) != -1) {
                 $scope.bookview_data_for_repeat.push(x);
             };
         });
