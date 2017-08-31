@@ -25,8 +25,8 @@
   <div class="row centered">
 	<div class="col col-1" style="background-color: #0079bf;"></div>
   	<div class="col col-10" style="background-color: #0079bf; padding-top: 30px; padding-bottom: 20px;text-align:center; color: #fff">
-	<!--<span ng-repeat="book_category_i in book_category_options"><button ng-click="change_book_category(book_category_i)">{{book_category_i}}</button> &nbsp; </span>--><h2><i class="fa fa-coffee" aria-hidden="true"></i> Tutorials.openscreencast</h2>
-		<p>Videotutorials zum Lernen<p>
+	<!--<span ng-repeat="book_category_i in book_category_options"><button ng-click="change_book_category(book_category_i)">{{book_category_i}}</button> &nbsp; </span>--><h2><i class="fa fa-coffee" aria-hidden="true"></i> Lernstube.openscreencast</h2>
+		<p>kleine Tutorials, Videos und Quiz zum Lernen<p>
 	</div>
 	<div class="col col-1" style="background-color: #0079bf;"></div>
   </div>
@@ -49,7 +49,7 @@
     		<div class="row blocks">
     			<div class="col col-3" ng-repeat="book_i in bookview_data_for_repeat">
         
-            			<div class="book">
+            			<div class="book" style="border: 1px solid black; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;">
                 		<p><i class="fa fa-{{book_i.image}} fa-5x" aria-hidden="true"></i></p>
                 		<p class="bookname"><strong>{{book_i.name}}</strong></p>
                 		<p class="bookdescription">{{book_i.description}}</p>
