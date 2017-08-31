@@ -50,7 +50,8 @@
     			<div class="col col-3" ng-repeat="book_i in bookview_data_for_repeat">
         
             			<div class="book" style="border: 1px solid black; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;">
-                		<p><i class="fa fa-{{book_i.image}} fa-5x" aria-hidden="true"></i></p>
+				<p style="text-align: left;"><span style="background-color: #F0F8FF; padding-top: 2px; padding-bottom: 2px; padding-left: 7px; padding-right: 7px; color: #999;"><i class="fa fa-{{book_i.book}} fa-1x" aria-hidden="true"></i> {{book_i.time}}</span></p>                 				
+				<p><i class="fa fa-{{book_i.image}} fa-5x" aria-hidden="true"></i></p>
                 		<p class="bookname"><strong>{{book_i.name}}</strong></p>
                 		<p class="bookdescription">{{book_i.description}}</p>
 				<p><a href="{{book_i.url}}"><button class="button secondary outline" style="color: #0079bf;">Start</button></a></p>
