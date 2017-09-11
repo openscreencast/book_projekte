@@ -7,9 +7,9 @@ var data = [
             description: "Lerne in kurzen Schritten die Grundlagen der Programmiersprache Python.",
             book: "video-camera",
             category: "Programmierung",
-	    tags: [ "Programmierung", "Python" ],
-	    lang: "de",
-	    time: "30m"
+	    	tags: [ "Programmierung", "Python" ],
+	    	lang: "de",
+	    	time: "30m"
             },
             {
             name: "Git für Einsteiger",
@@ -19,8 +19,8 @@ var data = [
             book: "video-camera",
             category: "Programmierung",
             tags: [ "Versionsverwaltung", "Git" ],
-	    lang: "de",
-	    time: ""
+	    	lang: "de",
+	    	time: "45m"
             },
             {
             name: "HTML und CSS",
@@ -30,8 +30,8 @@ var data = [
             book: "video-camera",
             category: "Web",
             tags: [ "Web", "HTML", "CSS", "www" ],
-	    lang: "de",
-	    time: ""
+	    	lang: "de",
+	    	time: "40m"
             }
  
 ];
