@@ -9,7 +9,7 @@ var data = [
             category: "Programmierung",
 	    	tags: [ "Programmierung", "Python" ],
 	    	lang: "de",
-	    	time: "35m"
+	    	time: "40m"
             },
             {
             name: "Git für Einsteiger",
