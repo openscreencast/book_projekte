@@ -53,9 +53,9 @@
     			<div class="col col-4" ng-repeat="book_i in bookview_data_for_repeat | filter:suche">
         
             			<div class="book" style="border: 1px solid #ccc; background-image: url('{{book_i.image}}'); background-position: left top; background-size: contain; background-repeat: no-repeat;">
-				              				
+				              			
 				<!-- <p><i class="fa fa-{{book_i.image}} fa-5x" aria-hidden="true"></i></p> -->
-                		<p class="bookname""><strong>{{book_i.name}}</strong></p>
+                		<p class="bookname"><strong>{{book_i.name}}</strong></p>
                 		<p class="bookdescription">{{book_i.description}}</p>
 				<p><a href="{{book_i.url}}"><button class="button small" style="color: #eee;">Start</button></a></p>
 				<p style="text-align: left; color: #999; font-size: 0.95em;"><i class="fa fa-{{book_i.book}} fa-1x" aria-hidden="true"></i> {{book_i.time}}</p>   
